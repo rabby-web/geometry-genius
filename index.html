@@ -59,7 +59,7 @@
                   class="btn btn-primary w-full"
                   onclick="calculateTriangleArea()"
                 >
-                  Buy Now
+                  Calculate
                 </button>
               </div>
             </div>
@@ -99,7 +99,7 @@
                   class="btn btn-primary w-full"
                   onclick="calculateRectangleArea()"
                 >
-                  Buy Now
+                  Calculate
                 </button>
               </div>
             </div>
@@ -139,7 +139,7 @@
                   class="btn btn-primary w-full"
                   onclick="calculateParallelogramArea()"
                 >
-                  Buy Now
+                  Calculate
                 </button>
               </div>
             </div>
@@ -147,13 +147,40 @@
           <!-- fourth card -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/rectangle.png" alt="Shoes" />
+              <img src="./images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center text-3xl font-semibold">Rhombus</h2>
+              <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+              <p>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="rhombus-d1"
+                  placeholder="d1"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="rhombus-d2"
+                  placeholder="d2"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <p class="text-xl font-medium">
+                Area: <span id="parallelogram-area">0</span
+                ><span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculateParallelogramArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -173,13 +200,40 @@
           <!-- last card -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/rectangle.png" alt="Shoes" />
+              <img src="./images/ellipse.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center text-3xl font-semibold">Ellipse</h2>
+              <p>Area (A) = πab</p>
+              <p>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="ellipse-a"
+                  placeholder="a"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="ellipse-b"
+                  placeholder="b"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <p class="text-xl font-medium">
+                Area: <span id="ellipse-area">0</span
+                ><span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculateEllipseArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>

@@ -42,3 +42,11 @@ function calculateParallelogramArea() {
   //   const areaSet = document.getElementById("parallelogram-area");
   //   areaSet.innerText = area;
 }
+
+function calculateEllipseArea() {
+  const major = getInputValue("ellipse-a");
+  const minor = getInputValue("ellipse-b");
+
+  const area = 3.1416 * major * minor;
+  setElementInnerText("ellipse-area", area);
+}
