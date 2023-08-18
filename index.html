@@ -107,13 +107,40 @@
           <!-- third card -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/rectangle.png" alt="Shoes" />
+              <img src="./images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center text-3xl font-semibold">Parallelogram</h2>
+              <p>Area (A) = b X h</p>
+              <p>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="parallelogram-b"
+                  placeholder="b"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="parallelogram-h"
+                  placeholder="h"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <p class="text-xl font-medium">
+                Area: <span id="parallelogram-area">0</span
+                ><span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculateParallelogramArea()"
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
