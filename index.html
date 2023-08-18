@@ -31,28 +31,36 @@
             </figure>
             <div class="card-body">
               <h2 class="text-center text-3xl font-semibold">Triangle</h2>
-              <p>Area (A) = 0.5 b X h</p>
+              <p>Area (A) = 0.5 X b X h</p>
               <p>
                 <input
                   class="border w-20 px-2 text-xl bg-gray-100"
                   type="text"
                   name=""
-                  id=""
+                  id="triangle-b"
                   placeholder="b"
                 />
-                <span class="mx-2">cm</span>
+                <span class="mx-2">cm<sup>2</sup></span>
                 <input
                   class="border w-20 px-2 text-xl bg-gray-100"
                   type="text"
                   name=""
-                  id=""
+                  id="triangle-h"
                   placeholder="h"
                 />
-                <span class="mx-2">cm</span>
+                <span class="mx-2">cm<sup>2</sup></span>
               </p>
-              <p>Area:</p>
+              <p class="text-xl font-medium">
+                Area: <span id="triangle-area">0</span
+                ><span class="mx-2">cm<sup>2</sup></span>
+              </p>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Buy Now</button>
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculateTriangleArea()"
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
@@ -62,10 +70,37 @@
               <img src="./images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center text-3xl font-semibold">Rectangle</h2>
+              <p>Area (A) = w X I</p>
+              <p>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="rectangle-w"
+                  placeholder="w"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="rectangle-i"
+                  placeholder="I"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <p class="text-xl font-medium">
+                Area: <span id="rectangle-area">0</span
+                ><span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculateTriangleArea()"
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
