@@ -52,6 +52,14 @@ function calculateRhombusArea() {
   setElementInnerText("rhombus-area", area);
 }
 
+// Pentagon Area
+function calculatePentagonArea() {
+  const length = getInputValue("pentagon-p");
+  const side = getInputValue("pentagon-b");
+
+  const area = 0.5 * length * side;
+  setElementInnerText("pentagon-area", area);
+}
 // Ellipse Area
 function calculateEllipseArea() {
   const major = getInputValue("ellipse-a");
