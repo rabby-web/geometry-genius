@@ -66,5 +66,6 @@ function calculateEllipseArea() {
   const minor = getInputValue("ellipse-b");
 
   const area = 3.1416 * major * minor;
-  setElementInnerText("ellipse-area", area);
+  const fixedTow = area.toFixed(2);
+  setElementInnerText("ellipse-area", fixedTow);
 }
