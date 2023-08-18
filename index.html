@@ -171,13 +171,13 @@
                 <span class="mx-2">cm<sup>2</sup></span>
               </p>
               <p class="text-xl font-medium">
-                Area: <span id="parallelogram-area">0</span
+                Area: <span id="rhombus-area">0</span
                 ><span class="mx-2">cm<sup>2</sup></span>
               </p>
               <div class="card-actions">
                 <button
                   class="btn btn-primary w-full"
-                  onclick="calculateParallelogramArea()"
+                  onclick="calculateRhombusArea()"
                 >
                   Calculate
                 </button>
@@ -187,13 +187,40 @@
           <!-- fifth card -->
           <div class="card bg-base-100 shadow-xl">
             <figure>
-              <img src="./images/rectangle.png" alt="Shoes" />
+              <img src="./images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="text-center text-3xl font-semibold">Pentagon</h2>
+              <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+              <p>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="pentagon-p"
+                  placeholder="p"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+                <input
+                  class="border w-20 px-2 text-xl bg-gray-100"
+                  type="text"
+                  name=""
+                  id="pentagon-b"
+                  placeholder="b"
+                />
+                <span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <p class="text-xl font-medium">
+                Area: <span id="pentagon-area">0</span
+                ><span class="mx-2">cm<sup>2</sup></span>
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary w-full"
+                  onclick="calculatePentagonArea()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>

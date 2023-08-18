@@ -43,6 +43,16 @@ function calculateParallelogramArea() {
   //   areaSet.innerText = area;
 }
 
+// Rhombus Area
+function calculateRhombusArea() {
+  const distance1 = getInputValue("rhombus-d1");
+  const distance2 = getInputValue("rhombus-d2");
+
+  const area = 0.5 * distance1 * distance2;
+  setElementInnerText("rhombus-area", area);
+}
+
+// Ellipse Area
 function calculateEllipseArea() {
   const major = getInputValue("ellipse-a");
   const minor = getInputValue("ellipse-b");
